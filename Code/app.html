@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLEMUSE - Exact Match</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* EXACT REPRODUCTION OF THE IMAGE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* REMOVED gradient from body */
+        }
+
+        /* Top color section */
+        .top-section {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70%; /* 70% top color */
+            background-color: #f6dbd3;
+            z-index: -1;
+        }
+
+        /* Bottom color section */
+        .bottom-section {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30%; /* 30% bottom color */
+            background-color: #bcc4ac;
+            z-index: -1;
+        }
+
+        /* MENU ICON AT TOP - Exactly as in image */
+        .menu-icon {
+            position: absolute;
+            top: 30px;
+            left: 60px;
+            font-size: 28px;
+            color: #333;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        /* Main container */
+        .containerr {
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 70vh; /* Only 70% height for top content */
+            padding: 0 20px;
+        }
+
+        /* Divider line */
+        .divider {
+            border: none;
+            height: 2px;
+            width: calc(100% - 6cm);
+            background-color: #000;
+            margin: 30px auto;
+        }
+
+        /* STYLEMUSE */
+        .logo {
+            font-size: 30px;
+            font-weight: 800;
+            color: #000;
+            letter-spacing: 4px;
+            line-height: 1;
+            margin-top: 100px;
+            margin-bottom: 40px;
+            font-family: "Copperplate Gothic 29 BC", "Copperplate Gothic", serif;
+            text-align: center;
+        }
+
+        /* "Letting your true beauty shine" */
+        .tagline {
+            font-size: 78px;
+            color: #000;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            font-weight: 400;
+            font-family:"TT Ramillas", serif;
+            font-style: italic;
+            text-align: center;
+        }
+
+        /* Line break after "your" */
+        .tagline br {
+            display: block;
+            content: "";
+            margin-top: 10px;
+        }
+
+        /* Subtitle */
+        .subtitle {
+            font-size: 22px;
+            color: #555;
+            margin-bottom: 40px;
+            font-weight: 300;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        /* Buttons container - ABSOLUTELY POSITIONED IN BOTTOM SECTION */
+        .buttons-container {
+            position: absolute;
+            top: 70vh; /* Starts at the 70% line */
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding-top: 40px; /* Space from the top of bottom section */
+            flex-wrap: wrap;
+            z-index: 5;
+        }
+
+        /* Buttons - INSIDE BOTTOM COLOR AREA */
+        .btn {
+            background: transparent;
+            border: 2px solid #000;
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #000;
+            cursor: pointer;
+            font-family: 'Montserrat', 'Arial', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            min-width: 280px;
+            transition: all 0.3s ease;
+            border-radius: 0;
+            text-align: center;
+        }
+
+        /* Button hover effect */
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Bottom slogan */
+        .slogan {
+            font-size: 24px;
+            color: #000;
+            font-weight: 700;
+            line-height: 1.4;
+            font-family: "TT Ramillas", serif;
+            letter-spacing: 0.5px;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            bottom: 30px; /* Near the bottom of the page */
+            left: 0;
+            right: 0;
+            z-index: 5;
+        }
+
+        /* Import fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .top-section {
+                height: 70%;
+            }
+            
+            .bottom-section {
+                height: 30%;
+            }
+            
+            .containerr {
+                max-width: 95%;
+                padding: 0 15px;
+                height: 70vh;
+            }
+            
+            .logo {
+                font-size: 38px;
+                font-family: "Copperplate Gothic 29 BC", "Copperplate Gothic", serif;
+                letter-spacing: 3px;
+                margin-top: 80px;
+
+            }
+            
+            .tagline {
+                font-size: 42px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+            
+            .btn {
+                padding: 15px 30px;
+                font-size: 16px;
+                min-width: 240px;
+            }
+            
+            /* Bottom slogan - WHITE TEXT */
+            .slogan {
+                font-size: 24px;
+                color: #ffffff; /* CHANGED from #000 to #ffffff for white */
+                font-weight: 700;
+                line-height: 1.4;
+                font-family: "TT Ramillas", serif;
+                letter-spacing: 0.5px;
+                text-align: center;
+                width: 100%;
+                position: absolute;
+                bottom: 30px;
+                left: 0;
+                right: 0;
+                z-index: 5;
+            }
+            
+            .buttons-container {
+                gap: 20px;
+                padding-top: 30px;
+                top: 70vh;
+            }
+            
+            .menu-icon {
+                top: 20px;
+                right: 20px;
+                font-size: 24px;
+            }
+            
+            .divider {
+                width: calc(100% - 4cm);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .top-section {
+                height: 70%;
+            }
+            
+            .bottom-section {
+                height: 30%;
+            }
+            
+            .containerr {
+                max-width: 100%;
+                padding: 0 10px;
+                height: 70vh;
+            }
+            
+            .logo {
+                font-size: 28px;
+                letter-spacing: 2px;
+                margin-top: 60px;
+            }
+            
+            .tagline {
+                font-size: 32px;
+            }
+            
+            .subtitle {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+                font-size: 14px;
+                min-width: 200px;
+            }
+            
+            .slogan {
+                font-size: 18px;
+                bottom: 15px;
+            }
+            
+            .buttons-container {
+                flex-direction: column;
+                align-items: center;
+                padding-top: 20px;
+                top: 70vh;
+            }
+            
+            .divider {
+                width: calc(100% - 2cm);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top color section -->
+    <div class="top-section"></div>
+    
+    <!-- Bottom color section -->
+    <div class="bottom-section"></div>
+
+    <!-- MENU ICON AT TOP - Exactly as in image -->
+    <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Main Container for top content -->
+    <div class="containerr">
+        <!-- STYLEMUSE - Smaller text -->
+        <div class="logo">STYLEMUSE</div>
+
+        <!-- Divider Line -->
+        <div class="divider"></div>
+        
+        <!-- "Letting your true beauty shine" - BIGGER text -->
+        <div class="tagline">Letting your<br>true beauty shine</div>
+        
+        <!-- Subtitle -->
+        <div class="subtitle">Your go-to fashion insister.</div>
+    </div>
+
+    <!-- Buttons - ABSOLUTELY POSITIONED IN BOTTOM COLOR AREA -->
+    <div class="buttons-container">
+        <button class="btn">Get Started for women</button>
+        <button class="btn">Get Started for women</button>
+    </div>
+    
+    <!-- Bottom slogan -->
+    <div class="slogan">Styled for Your Body. Matched to Your Glow</div>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            alert('Menu clicked! In a real app, this would open a navigation menu.');
+        });
+        
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('Starting your StyleMuse journey!');
+            });
+        });
+    </script>
+</body>
+</html>
