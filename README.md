@@ -5,6 +5,7 @@ It is a machine learning-based recommendation system that suggests outfits, skin
 based on the user's personal attributes using trained regression models, accessible through a locally hosted  interface.
 
 ## Project Structure
+```
 ├── app.py
 ├── compare_models.py
 ├── model_training.py
@@ -20,8 +21,9 @@ based on the user's personal attributes using trained regression models, accessi
 │   ├── outfit.html
 │   ├── skincare.html
 │   └── haircare.html
-├── datasets/        
-├── models/          
+├── datasets/
+├── models/
 └── reports/
+```
 
 
