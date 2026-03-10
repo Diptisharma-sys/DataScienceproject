@@ -1,7 +1,7 @@
 # Glam Recommendation System
 
 A machine learning-powered recommendation system for outfits, skincare and haircare .
-Glamify is a machine learning-based recommendation system that suggests outfits, skincare, and haircare products
+It is a machine learning-based recommendation system that suggests outfits, skincare, and haircare products
 based on the user's personal attributes using trained regression models, accessible through a locally hosted  interface.
 
 ## Project Structure
