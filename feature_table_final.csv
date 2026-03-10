@@ -1,0 +1,48 @@
+Feature Name,Type,Description
+user_id,Categorical (One-Hot Encoded),Indicator for user id
+dress_id,Categorical (One-Hot Encoded),Indicator for dress id
+body_match_score,Numeric,Score measuring how outfit matches user body type
+style_score,Numeric,Score measuring style compatibility
+final_ratings,Numeric,Target rating given by the user for the outfit
+age,Numeric,User age in years
+height_cm,Numeric,User height in centimeters
+weight_kg,Numeric,User weight in kilograms
+BMI,Numeric,Body Mass Index derived from height and weight
+gender_Female,Categorical (One-Hot Encoded),Indicator for gender Female
+body_type_Apple,Categorical (One-Hot Encoded),Indicator for body type Apple
+body_type_Athletic,Categorical (One-Hot Encoded),Indicator for body type Athletic
+body_type_Hourglass,Categorical (One-Hot Encoded),Indicator for body type Hourglass
+body_type_Pear,Categorical (One-Hot Encoded),Indicator for body type Pear
+body_type_Rectangle,Categorical (One-Hot Encoded),Indicator for body type Rectangle
+skin_tone_Dark,Categorical (One-Hot Encoded),Indicator for skin tone Dark
+skin_tone_Fair,Categorical (One-Hot Encoded),Indicator for skin tone Fair
+skin_tone_Medium,Categorical (One-Hot Encoded),Indicator for skin tone Medium
+hair_type_Curly,Categorical (One-Hot Encoded),Indicator for hair type Curly
+hair_type_Straight,Categorical (One-Hot Encoded),Indicator for hair type Straight
+hair_type_Wavy,Categorical (One-Hot Encoded),Indicator for hair type Wavy
+hair_color_Black,Categorical (One-Hot Encoded),Indicator for hair color Black
+hair_color_Blonde,Categorical (One-Hot Encoded),Indicator for hair color Blonde
+hair_color_Brown,Categorical (One-Hot Encoded),Indicator for hair color Brown
+category_Gown,Categorical (One-Hot Encoded),Indicator for category Gown
+category_Kurti,Categorical (One-Hot Encoded),Indicator for category Kurti
+category_Lehenga,Categorical (One-Hot Encoded),Indicator for category Lehenga
+category_Saree,Categorical (One-Hot Encoded),Indicator for category Saree
+category_Suit,Categorical (One-Hot Encoded),Indicator for category Suit
+fit_type_Loose,Categorical (One-Hot Encoded),Indicator for fit type Loose
+fit_type_Regular,Categorical (One-Hot Encoded),Indicator for fit type Regular
+fit_type_Slim,Categorical (One-Hot Encoded),Indicator for fit type Slim
+primary_color_Black,Categorical (One-Hot Encoded),Indicator for primary color Black
+primary_color_Blue,Categorical (One-Hot Encoded),Indicator for primary color Blue
+primary_color_Green,Categorical (One-Hot Encoded),Indicator for primary color Green
+primary_color_Pink,Categorical (One-Hot Encoded),Indicator for primary color Pink
+primary_color_Red,Categorical (One-Hot Encoded),Indicator for primary color Red
+fabric_Cotton,Categorical (One-Hot Encoded),Indicator for fabric Cotton
+fabric_Net,Categorical (One-Hot Encoded),Indicator for fabric Net
+fabric_Silk,Categorical (One-Hot Encoded),Indicator for fabric Silk
+fabric_Velvet,Categorical (One-Hot Encoded),Indicator for fabric Velvet
+event_type_College,Categorical (One-Hot Encoded),Indicator for event type College
+event_type_Festival,Categorical (One-Hot Encoded),Indicator for event type Festival
+event_type_Formal,Categorical (One-Hot Encoded),Indicator for event type Formal
+event_type_Party,Categorical (One-Hot Encoded),Indicator for event type Party
+event_type_Reception,Categorical (One-Hot Encoded),Indicator for event type Reception
+event_type_Wedding,Categorical (One-Hot Encoded),Indicator for event type Wedding
